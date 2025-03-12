@@ -29,6 +29,8 @@ $config = [
      * Current storage id for new data
      *
      * Should be a key in the $storages array
+     * 
+     * Make sure you install the redis extension for PHP if you plan to use the Redis storage option!
      */
     "storageId" => "m",
 

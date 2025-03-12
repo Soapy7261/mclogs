@@ -4,3 +4,4 @@
 config.php
 /vendor/
 mongo.php
+redis.php
