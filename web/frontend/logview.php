@@ -82,6 +82,10 @@ if (!$log->exists()) {
                 <a href="/" class="logo">
                     <img src="img/logo.png" />
                 </a>
+                <div style="color: red;">
+                    <h2>Instance hosted by Soapy7261</h2>
+                    <h4>Not endorsed or affiliated with Aternos</h4>
+                </div>
                 <div class="menu">
                     <a class="menu-item" href="/#info">
                         <i class="fa fa-info-circle"></i> Info

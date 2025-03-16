@@ -13,7 +13,7 @@ $legal = Config::Get('legal');
 
         <title>API Documentation - mclo.gs</title>
 
-        <base href="//<?=str_replace("api.", "", $_SERVER['HTTP_HOST']); ?>/" />
+        <base href="//<?=str_replace("api", "", $_SERVER['HTTP_HOST']); ?>/" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/btn.css" />
@@ -43,6 +43,10 @@ $legal = Config::Get('legal');
                 <a href="/" class="logo">
                     <img src="img/logo.png" />
                 </a>
+                <div style="color: red;">
+                    <h2>Instance hosted by Soapy7261</h2>
+                    <h4>Not endorsed or affiliated with Aternos</h4>
+                </div>
                 <div class="menu">
                     <a class="menu-social btn btn-black btn-notext btn-large btn-no-margin" href="https://github.com/aternosorg/mclogs" target="_blank">
                         <i class="fa fa-github"></i>
