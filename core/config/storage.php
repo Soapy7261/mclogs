@@ -11,12 +11,12 @@ $config = [
         "m" => [
             "name" => "MongoDB",
             "class" => "\\Storage\\Mongo",
-            "enabled" => true
+            "enabled" => false
         ],
         "f" => [
             "name" => "Filesystem",
             "class" => "\\Storage\\Filesystem",
-            "enabled" => false
+            "enabled" => true
         ],
         "r" => [
             "name" => "Redis",
@@ -30,7 +30,7 @@ $config = [
      *
      * Should be a key in the $storages array
      */
-    "storageId" => "m",
+    "storageId" => "f",
 
     /**
      * Time in seconds to store data after put or last renew

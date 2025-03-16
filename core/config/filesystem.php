@@ -7,6 +7,6 @@ $config = [
      *
      * Relative to CORE_PATH, begins and ends with /
      */
-    "path" => "/../storage/logs/",
+    "path" => "/../../../../home/container/logs/",
 
 ];
