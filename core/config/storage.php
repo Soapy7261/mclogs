@@ -35,14 +35,14 @@ $config = [
     /**
      * Time in seconds to store data after put or last renew
      */
-    "storageTime" => 90 * 24 * 60 * 60,
+    "storageTime" => 30 * 24 * 60 * 60,
 
     /**
      * Maximum string length to store
      *
      * Will be cut by \Filter\Pre\Length
      */
-    "maxLength" => 10 * 1024 * 1024,
+    "maxLength" => 5 * 1024 * 1024,
 
     /**
      * Maximum number of lines to store
