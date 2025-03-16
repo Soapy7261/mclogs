@@ -63,7 +63,7 @@ if (!$log->exists()) {
         <meta property="og:description" content="<?=$description; ?>" />
         <meta property="og:url" content="<?=$urls['baseUrl'] . "/" . $id->get(); ?>" />
 
-        <script>
+        <!-- <script>
             let _paq = window._paq = window._paq || [];
             _paq.push(['disableCookies']);
             _paq.push(['trackPageView']);
@@ -74,7 +74,7 @@ if (!$log->exists()) {
                 let d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
                 g.async=true; g.src='/data.js'; s.parentNode.insertBefore(g,s);
             })();
-        </script>
+        </script> -->
     </head>
     <body class="log-body">
         <header class="row navigation">

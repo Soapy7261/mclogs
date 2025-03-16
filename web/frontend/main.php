@@ -23,7 +23,7 @@ $storage = \Config::Get('storage');
         <meta name="description" content="Easily paste your Minecraft logs to share and analyse them.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <script>
+        <!-- <script>
             let _paq = window._paq = window._paq || [];
             _paq.push(['disableCookies']);
             _paq.push(['trackPageView']);
@@ -34,7 +34,7 @@ $storage = \Config::Get('storage');
                 let d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
                 g.async=true; g.src='/data.js'; s.parentNode.insertBefore(g,s);
             })();
-        </script>
+        </script> -->
     </head>
     <body>
         <header class="row navigation">
