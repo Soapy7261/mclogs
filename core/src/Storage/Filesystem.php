@@ -29,6 +29,9 @@ class Filesystem implements StorageInterface
             $id->regenerate();
         } while (file_exists($basePath . $id->getRaw()));
 
+        if ($config['compress'] === true) {
+            $data = gzcompress($data, 9);
+        }
         file_put_contents($basePath . $id->getRaw(), $data);
         return $id;
     }
@@ -48,7 +51,12 @@ class Filesystem implements StorageInterface
             return false;
         }
 
-        return file_get_contents($basePath . $id->getRaw()) ?: null;
+        $file_data = file_get_contents($basePath . $id->getRaw());
+        if ($file_data !== false) {
+            $decompressed = @gzuncompress($file_data);
+            return $decompressed !== false ? $decompressed : $file_data;
+        }
+        return null;
     }
 
     /**
