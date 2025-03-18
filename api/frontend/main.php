@@ -16,10 +16,10 @@ $legal = Config::Get('legal');
         <base href="//<?=str_replace("api", "", $_SERVER['HTTP_HOST']); ?>/" />
 
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
-        <link rel="stylesheet" href="css/font-awesome.min.css?v=000001" />
+        <link rel="stylesheet" href="css/font-awesome.min.css?v=000002" />
         <link rel="stylesheet" href="css/btn.css" />
         <link rel="stylesheet" href="css/mclogs.css?v=071224" />
-        <link rel="stylesheet" href="css/googlefont.css?v=000001" />
+        <link rel="stylesheet" href="css/googlefont.css?v=000002" />
 
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
