@@ -24,7 +24,7 @@ class Redis extends RedisClient implements StorageInterface {
             $id->regenerate();
         } while(self::Get($id) !== null);
 
-        self::$connection->setEx($id->getRaw(), $config['storageTime'], $data);
+        self::$connection->setEx($id->getRaw(), $config['storageTime'], Compression::compress($data));
         return $id;
     }
 
@@ -38,7 +38,9 @@ class Redis extends RedisClient implements StorageInterface {
     {
         self::Connect();
 
-        return self::$connection->get($id->getRaw()) ?: null;
+        $data = self::$connection->get($id->getRaw()) ?: null;
+
+        return Compression::decompress($data);
     }
 
     /**
