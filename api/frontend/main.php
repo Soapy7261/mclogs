@@ -8,16 +8,18 @@ $legal = Config::Get('legal');
         <meta charset="utf-8" />
         <meta name="theme-color" content="#2d3943" />
 
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Play:400,700">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" />
+        <!--<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Play:400,700">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" /> -->
 
         <title>API Documentation - mclo.gs</title>
 
         <base href="//<?=str_replace("api", "", $_SERVER['HTTP_HOST']); ?>/" />
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+        <link rel="stylesheet" href="css/font-awesome.min.css?v=000001" />
         <link rel="stylesheet" href="css/btn.css" />
         <link rel="stylesheet" href="css/mclogs.css?v=071224" />
+        <link rel="stylesheet" href="css/googlefont.css?v=000001" />
 
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
