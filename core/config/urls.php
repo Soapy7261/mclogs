@@ -7,7 +7,7 @@ $config = [
      *
      * Should not end with a slash
      */
-    "baseUrl" => "https://api.cloudykingdom.com",
+    "baseUrl" => "https://paste.cloudykingdom.com",
 
     /**
      * The base URL for the API
