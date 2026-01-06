@@ -8,5 +8,5 @@ $config = [
      * @see http://php.net/manual/en/mongodb-driver-manager.construct.php
      * @see http://php.net/manual/en/mongodb.persistence.php#mongodb.persistence.typemaps
      */
-    "url" => "mongodb://127.0.0.1/"
+    "url" => getenv('MONGODB_URL') ?? "mongodb://127.0.0.1/"
 ];
