@@ -30,7 +30,7 @@ $config = [
      *
      * Should be a key in the $storages array
      */
-    "storageId" => "f",
+    "storageId" => getenv('MONGODB_URL') ? "m" : "f",
 
     /**
      * Time in seconds to store data after put or last renew
