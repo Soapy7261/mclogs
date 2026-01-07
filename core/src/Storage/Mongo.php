@@ -26,7 +26,7 @@ class Mongo extends \Client\MongoDBClient implements StorageInterface
 
         $date = new UTCDateTime((time() + $config['storageTime']) * 1000);
 
-        $data = Compression::compress($data);
+        //$data = Compression::compress($data);
 
         self::getCollection()->insertOne([
             "_id" => $id->getRaw(),
@@ -51,7 +51,7 @@ class Mongo extends \Client\MongoDBClient implements StorageInterface
             return null;
         }
 
-        return Compression::decompress($result->data);
+        return $result->data;
     }
 
     /**

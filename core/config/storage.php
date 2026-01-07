@@ -55,6 +55,8 @@ $config = [
      * Compress data before storing it
      * 
      * This is recommended since logs usually compress well
+     * 
+     * Does not apply if using MongoDB! (as MongoDB already does compression)
      */
     "compress" => true,
 
