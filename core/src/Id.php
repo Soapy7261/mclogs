@@ -50,7 +50,7 @@ class Id
         for ($i = 0; $i < $config['length']; $i++) {
             try {
                 $rawId .= $config['characters'][random_int(0, strlen($config['characters']) - 1)];
-            } catch  (\Random\RandomException $e) {
+            } catch (\Random\RandomException $e) {
                 error_log("WARNING: Secure random source unavailable. Falling back to rand() for ID generation.");
                 $rawId .= $config['characters'][rand(0, strlen($config['characters']) - 1)];
             }
